@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
+
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .section {
@@ -17,6 +21,8 @@
     justify-content: center;
     font-size: 2rem;
     font-weight: bold;
+
+    scroll-snap-align: start;
 }
 
 .dot:hover {
@@ -42,4 +48,5 @@
     right: 20px;
     display: flex;
     gap: 10px;
+    flex-direction: column;
 }
