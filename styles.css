@@ -8,8 +8,11 @@
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    overscroll-behavior-y: contain;
 }
 
 .section {
@@ -20,7 +23,6 @@
     justify-content: center;
     font-size: 2rem;
     font-weight: bold;
-
     scroll-snap-align: start;
 }
 
